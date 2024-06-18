@@ -1,0 +1,17 @@
+{
+  "name": "revisor-test-api",
+  "version": "1.0.0",
+  "description": "API для тестового задания",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Tozix",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "express": "^4.18.2"
+  }
+}
