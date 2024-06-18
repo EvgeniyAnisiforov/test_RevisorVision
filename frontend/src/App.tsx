@@ -1,8 +1,8 @@
 import './App.css'
 import {Route, Routes, BrowserRouter} from 'react-router-dom'
 
-import {Catalog} from './pages/Catalog'
-import { Favourites } from './pages/Favourites'
+import {Catalog} from './pages/Catalog/Catalog'
+import { Favourites } from './pages/Favourites/Favourites'
 import { NotFoundPage } from './pages/NotFoundPage'
 
 import { Layout } from './components/Layout'
