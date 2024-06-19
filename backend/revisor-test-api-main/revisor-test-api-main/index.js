@@ -1,5 +1,6 @@
 import express from "express";
 import fs from "fs";
+import cors from 'cors';
 
 const app = express();
 
@@ -8,6 +9,11 @@ const albums = JSON.parse(fs.readFileSync("albums.json", "utf-8"));
 const photos = JSON.parse(fs.readFileSync("photos.json", "utf-8"));
 
 app.use(express.json());
+app.use(cors({
+  origin: 'http://localhost:5173',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+})); 
 
 // Эндпоинты
 app.get("/users/:userId", (req, res) => {
