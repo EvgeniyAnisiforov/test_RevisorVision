@@ -5,7 +5,7 @@ import { useUsers } from "../../services/user.services"
 
 
 const Catalog: FC<{}> = () => {
-    const { data, isLoading} = useUsers();
+  const { data, isLoading} = useUsers();
   return (
     <div>
       {isLoading ? (

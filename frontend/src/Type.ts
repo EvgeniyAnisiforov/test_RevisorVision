@@ -31,3 +31,8 @@ export interface PhotoType {
   title: string
   url: string
 }
+
+export interface TypePropsModalWindowPhoto {
+  id: string
+  close: () => void
+}

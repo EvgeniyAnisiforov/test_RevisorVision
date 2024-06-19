@@ -1,7 +1,7 @@
 .Layout__containerMenu--flex{
     width: 744px;
     margin: 0 auto 40px;
-    margin-top: 64px;
+    padding-top: 64px;
     display: flex;
     justify-content: center;
 }

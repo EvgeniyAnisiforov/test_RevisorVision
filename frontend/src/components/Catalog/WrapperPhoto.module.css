@@ -27,3 +27,6 @@
     height: 20px;
     color: #FFAF37;
 }
+.WrapperPhoto__img{
+    cursor: pointer;
+}
