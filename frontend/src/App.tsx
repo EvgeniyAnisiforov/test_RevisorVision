@@ -5,7 +5,7 @@ import {Catalog} from './pages/Catalog/Catalog'
 import { Favourites } from './pages/Favourites/Favourites'
 import { NotFoundPage } from './pages/NotFoundPage'
 
-import { Layout } from './components/Layout'
+import { Layout } from './components/Layout/Layout'
 
 function App() {
   return (

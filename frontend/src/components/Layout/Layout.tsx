@@ -2,7 +2,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import {FC} from 'react'
 import style from './Layout.module.css'
 
-const Layout: FC<any> = () => {
+const Layout: FC<{}> = () => {
     return (
         <>
             <header className={style["Layout__containerMenu--flex"]}>
