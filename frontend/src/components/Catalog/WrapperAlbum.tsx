@@ -6,7 +6,6 @@ import WrapperPhoto from "../Catalog/WrapperPhoto"
 import { PropsTypeWrapperAlbum } from "../../Type"
 import { PhotoType } from "../../Type"
 import { usePhotosByAlbumId } from "../../services/photo.services"
-import HoverText from './HoverText'
 
 const WrapperAlbum: FC<PropsTypeWrapperAlbum> = ({ title, albumId }) => {
   const [state, setState] = useState<boolean>(true)

@@ -2,7 +2,10 @@ body{
     text-align: center;
     font-family: Roboto;
 }
-
+.active{
+    color:#117DC1;
+    background-color: #EDF9FF;
+}
 * {
 	padding: 0px;
 	margin: 0px;
