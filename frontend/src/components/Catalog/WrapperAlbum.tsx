@@ -3,14 +3,15 @@ import style from "./WrapperAlbum.module.css"
 import { AiOutlinePlus } from "react-icons/ai"
 import { AiOutlineMinus } from "react-icons/ai"
 import WrapperPhoto from "../Catalog/WrapperPhoto"
-import {PropsTypeWrapperAlbum} from "../../Type"
-import {PhotoType} from '../../Type'
+import { PropsTypeWrapperAlbum } from "../../Type"
+import { PhotoType } from "../../Type"
 import { usePhotosByAlbumId } from "../../services/photo.services"
+import HoverText from './HoverText'
 
-const WrapperAlbum: FC<PropsTypeWrapperAlbum> = ({ title, albumId}) => {
+const WrapperAlbum: FC<PropsTypeWrapperAlbum> = ({ title, albumId }) => {
   const [state, setState] = useState<boolean>(true)
 
-  const {data, isLoading} = usePhotosByAlbumId(albumId)
+  const { data, isLoading } = usePhotosByAlbumId(albumId)
   return (
     <>
       <div className={style["WrapperAlbum__container"]}>
@@ -27,7 +28,16 @@ const WrapperAlbum: FC<PropsTypeWrapperAlbum> = ({ title, albumId}) => {
         <h2>{title}</h2>
       </div>
 
-      {!state && (isLoading ? <div>Loading...</div> : <div className={style["WrapperAlbum__containerPhoto"]}>{data.map((photo:PhotoType)=><WrapperPhoto text={photo.title} url={photo.url} key={photo.id}/>)}</div>)}
+      {!state &&
+        (isLoading ? (
+          <div>Loading...</div>
+        ) : (
+          <div className={style["WrapperAlbum__containerPhoto"]}>
+              {data.map((photo: PhotoType) => (
+                  <WrapperPhoto text={photo.title} url={photo.url} key={photo.id} />
+              ))}            
+          </div>
+        ))}
     </>
   )
 }

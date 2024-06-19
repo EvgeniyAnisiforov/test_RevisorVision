@@ -8,6 +8,7 @@ import {
   removeFavouritesPhoto,
   setFavouritesPhoto,
 } from "../../store/slice/FavouritesPhoto-slice"
+import HoverText from './HoverText'
 
 const WrapperPhoto: FC<PropsTypeWrapperPhoto> = ({ url, text }) => {
   const dispatch = useAppDispatch()
@@ -35,11 +36,14 @@ const WrapperPhoto: FC<PropsTypeWrapperPhoto> = ({ url, text }) => {
             }
           />
         </div>
-        <img
-          className={style["WrapperPhoto__img"]}
-          onClick={() => dispatch(setPhoto(url))}
-          src={url}
-        />
+        <HoverText text={text}>
+          <img
+            className={style["WrapperPhoto__img"]}
+            onClick={() => dispatch(setPhoto(url))}
+            src={url}
+          />
+        </HoverText>
+        
       </div>
     </>
   )
