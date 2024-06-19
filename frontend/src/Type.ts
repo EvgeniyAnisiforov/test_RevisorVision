@@ -38,7 +38,7 @@ export interface TypePropsModalWindowPhoto {
   close: () => void
 }
 
-export interface PropsTypeHoverText{
+export interface PropsTypeHoverText {
   children: React.ReactNode
   text: string
 }

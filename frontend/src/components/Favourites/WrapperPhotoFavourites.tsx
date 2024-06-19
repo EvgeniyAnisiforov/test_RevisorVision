@@ -40,7 +40,9 @@ const WrapperPhotoFavourites: FC<PropsTypeWrapperPhoto> = ({ url, text }) => {
           onClick={() => dispatch(setPhoto(url))}
           src={url}
         />
-        <div className={style["WrapperPhotoFavourites__containerText"]}><p>{text}</p></div>
+        <div className={style["WrapperPhotoFavourites__containerText"]}>
+          <p>{text}</p>
+        </div>
       </div>
     </>
   )

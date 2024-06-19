@@ -1,32 +1,32 @@
-.WrapperPhoto__containerPhoto{
-    position: relative;
+.WrapperPhoto__containerPhoto {
+  position: relative;
 }
-.WrapperPhoto__circleStar{
-    width: 32px;
-    height: 32px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    cursor: pointer;
+.WrapperPhoto__circleStar {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
 
-    position: absolute;
-    top: 8px;
-    right: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.WrapperPhoto__Star{
-    width: 20px;
-    height: 20px;
-    color: #D0D0D0;
+.WrapperPhoto__Star {
+  width: 20px;
+  height: 20px;
+  color: #d0d0d0;
 }
-.WrapperPhoto__Star--active{
-    width: 20px;
-    height: 20px;
-    color: #FFAF37;
+.WrapperPhoto__Star--active {
+  width: 20px;
+  height: 20px;
+  color: #ffaf37;
 }
-.WrapperPhoto__img{
-    cursor: pointer;
+.WrapperPhoto__img {
+  cursor: pointer;
 }

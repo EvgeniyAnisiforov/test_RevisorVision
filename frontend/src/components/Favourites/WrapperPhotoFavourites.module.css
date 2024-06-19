@@ -1,41 +1,41 @@
-.WrapperPhotoFavourites__containerPhoto{
-    position: relative;
+.WrapperPhotoFavourites__containerPhoto {
+  position: relative;
 }
-.WrapperPhotoFavourites__circleStar{
-    width: 32px;
-    height: 32px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    cursor: pointer;
+.WrapperPhotoFavourites__circleStar {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
 
-    position: absolute;
-    top: 8px;
-    right: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.WrapperPhotoFavourites__Star{
-    width: 20px;
-    height: 20px;
-    color: #D0D0D0;
+.WrapperPhotoFavourites__Star {
+  width: 20px;
+  height: 20px;
+  color: #d0d0d0;
 }
-.WrapperPhotoFavourites__Star--active{
-    width: 20px;
-    height: 20px;
-    color: #FFAF37;
+.WrapperPhotoFavourites__Star--active {
+  width: 20px;
+  height: 20px;
+  color: #ffaf37;
 }
-.WrapperPhotoFavourites__img{
-    cursor: pointer;
+.WrapperPhotoFavourites__img {
+  cursor: pointer;
 }
-.WrapperPhotoFavourites__containerText{
-    margin-top: 12px;
-    width: 150px;
-    text-align: left;
+.WrapperPhotoFavourites__containerText {
+  margin-top: 12px;
+  width: 150px;
+  text-align: left;
 }
-.WrapperPhotoFavourites__containerText p{
-    font-size: 14px;
-    color: #787878;
+.WrapperPhotoFavourites__containerText p {
+  font-size: 14px;
+  color: #787878;
 }
