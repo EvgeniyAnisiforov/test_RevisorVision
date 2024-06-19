@@ -1,5 +1,5 @@
 import { FC } from "react"
-import style from "./WrapperPhoto.module.css"
+import style from "./WrapperPhotoFavourites.module.css"
 import { FaStar } from "react-icons/fa"
 import { PropsTypeWrapperPhoto } from "../../Type"
 import { useAppDispatch, useAppSelector } from "../../store/hook"
@@ -9,7 +9,7 @@ import {
   setFavouritesPhoto,
 } from "../../store/slice/FavouritesPhoto-slice"
 
-const WrapperPhoto: FC<PropsTypeWrapperPhoto> = ({ url, text }) => {
+const WrapperPhotoFavourites: FC<PropsTypeWrapperPhoto> = ({ url, text }) => {
   const dispatch = useAppDispatch()
   const activeStar = useAppSelector((state) => state.FavouritesPhoto.value)
   const isActive = activeStar.some((el) => el.url === url)
@@ -24,24 +24,25 @@ const WrapperPhoto: FC<PropsTypeWrapperPhoto> = ({ url, text }) => {
 
   return (
     <>
-      <div className={style["WrapperPhoto__containerPhoto"]}>
-        <div className={style["WrapperPhoto__circleStar"]}>
+      <div className={style["WrapperPhotoFavourites__containerPhoto"]}>
+        <div className={style["WrapperPhotoFavourites__circleStar"]}>
           <FaStar
             onClick={handlerClickFavourites}
             className={
               !isActive
-                ? style["WrapperPhoto__Star"]
-                : style["WrapperPhoto__Star--active"]
+                ? style["WrapperPhotoFavourites__Star"]
+                : style["WrapperPhotoFavourites__Star--active"]
             }
           />
         </div>
         <img
-          className={style["WrapperPhoto__img"]}
+          className={style["WrapperPhotoFavourites__img"]}
           onClick={() => dispatch(setPhoto(url))}
           src={url}
         />
+        <div className={style["WrapperPhotoFavourites__containerText"]}><p>{text}</p></div>
       </div>
     </>
   )
 }
-export default WrapperPhoto
+export default WrapperPhotoFavourites

@@ -10,6 +10,7 @@ export interface PropsTypeWrapperAlbum {
 
 export interface PropsTypeWrapperPhoto {
   url: string
+  text: string
 }
 
 export interface AlbumType {

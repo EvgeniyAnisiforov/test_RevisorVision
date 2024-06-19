@@ -27,7 +27,7 @@ const WrapperAlbum: FC<PropsTypeWrapperAlbum> = ({ title, albumId}) => {
         <h2>{title}</h2>
       </div>
 
-      {!state && (isLoading ? <div>Loading...</div> : <div className={style["WrapperAlbum__containerPhoto"]}>{data.map((photo:PhotoType)=><WrapperPhoto url={photo.url} key={photo.id}/>)}</div>)}
+      {!state && (isLoading ? <div>Loading...</div> : <div className={style["WrapperAlbum__containerPhoto"]}>{data.map((photo:PhotoType)=><WrapperPhoto text={photo.title} url={photo.url} key={photo.id}/>)}</div>)}
     </>
   )
 }

@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 import { Provider } from 'react-redux'
-import { store } from './components/store/index.ts'
+import { store } from './store/index.ts'
 
 
 const queryClient = new QueryClient()
